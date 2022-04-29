@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Create song class with constructors, getters and toString().">
+    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Create album class with constructor, addSong(), findSong().">
       <change beforePath="$PROJECT_DIR$/src/com/player/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/player/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651199576996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create album class with constructor, addSong(), findSong().">
+      <created>1651204738351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651204738351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intial Commit." />
     <MESSAGE value="Create song class with constructors, getters and toString()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create song class with constructors, getters and toString()." />
+    <MESSAGE value="Create album class with constructor, addSong(), findSong()." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create album class with constructor, addSong(), findSong()." />
   </component>
 </project>
