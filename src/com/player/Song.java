@@ -17,7 +17,7 @@ public class Song {
     }
     @Override
     public String toString() {
-        return "Song { Title: " + title + "\"" +
-                        "Duration: " + duration + " }";
+        return "Title: " + title + " | " +
+                        "Duration: " + duration;
     }
 }

@@ -15,6 +15,7 @@ public class Album {
         this.songs = new ArrayList<Song>();
     }
 
+    //Find song in album
     public Song findSong(String title) {
         for (int i = 0; i < songs.size(); i++) {
             if (songs.get(i).getTitle().equals(title)) {
@@ -24,6 +25,7 @@ public class Album {
         return null;
     }
 
+    //Add song in album
     public boolean addSong(String title, double duration) {
         if (findSong(title) == null) {
             songs.add(new Song(title, duration));

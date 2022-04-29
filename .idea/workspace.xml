@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Create album class with constructor, addSong(), findSong().">
+    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Implement addToPlaylist() by track number and song title. Tested in main.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/player/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Album.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/player/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651204738351</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement addToPlaylist() by track number and song title. Tested in main.">
+      <created>1651206607769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651206607769</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +112,7 @@
     <MESSAGE value="Intial Commit." />
     <MESSAGE value="Create song class with constructors, getters and toString()." />
     <MESSAGE value="Create album class with constructor, addSong(), findSong()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create album class with constructor, addSong(), findSong()." />
+    <MESSAGE value="Implement addToPlaylist() by track number and song title. Tested in main." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement addToPlaylist() by track number and song title. Tested in main." />
   </component>
 </project>

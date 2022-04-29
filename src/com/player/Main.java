@@ -1,7 +1,6 @@
 package com.player;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Main {
 
@@ -29,6 +28,49 @@ public class Main {
         albums.get(0).addToPlaylist("Anyone", playlist1);
         albums.get(1).addToPlaylist("Bags", playlist1);
 
+        printOptions();
+        printSongs(playlist1);
+        play(playlist1);
+
     }
 
+    private static void playlist(LinkedList<Song> playlist) {
+    }
+
+    //Play the playlist
+    private static void play(LinkedList<Song> playlist) {
+        Scanner sc = new Scanner(System.in);
+        boolean quit = false;
+        boolean forward = true;
+        ListIterator<Song> listIterator = playlist.listIterator();
+
+        if (playlist.size() == 0) {
+            System.out.println("This playlist has no songs");
+        } else {
+            System.out.println("Now playing \"" + listIterator.next().getTitle() + "\"");
+            printOptions();
+        }
+
+
+    }
+    private static void printOptions() {
+        System.out.println("Choose an option: ");
+        System.out.println(
+                "0 - Quit\n" +
+                "1 - Play next song\n" +
+                "2 - Play previous song\n" +
+                "3 - Show all songs\n" +
+                "4 - Show all options\n" +
+                "5 - Delete current song\n");
+    }
+
+    private static void printSongs(LinkedList<Song> playlist) {
+        Iterator<Song> iterator = playlist.iterator();
+        System.out.println("---------------Songs---------------");
+
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        System.out.println("-----------------------------------");
+    }
 }
