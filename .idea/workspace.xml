@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Implement printOptions(), printSongs(), play() for user interface.">
+    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Implemented options 0 to 6.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Main.java" afterDir="false" />
     </list>
@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651208690331</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented options 0 to 6.">
+      <created>1651213116945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651213116945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="Create album class with constructor, addSong(), findSong()." />
     <MESSAGE value="Implement addToPlaylist() by track number and song title. Tested in main." />
     <MESSAGE value="Implement printOptions(), printSongs(), play() for user interface." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement printOptions(), printSongs(), play() for user interface." />
+    <MESSAGE value="Implemented options 0 to 6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented options 0 to 6." />
   </component>
 </project>

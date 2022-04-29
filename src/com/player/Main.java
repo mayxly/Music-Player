@@ -3,7 +3,6 @@ package com.player;
 import java.util.*;
 
 public class Main {
-
     private static ArrayList<Album> albums = new ArrayList<>();
     public static void main (String [] args) {
 
@@ -31,7 +30,6 @@ public class Main {
         printOptions();
         printSongs(playlist1);
         play(playlist1);
-
     }
 
     private static void playlist(LinkedList<Song> playlist) {
@@ -55,7 +53,7 @@ public class Main {
             int action = sc.nextInt();
 
             if (action == 0) {
-                System.out.println("Quit");
+                System.out.println("The music has stopped playing");
                 quit = true;
             }
             else if (action == 1) {
@@ -83,22 +81,24 @@ public class Main {
                 }
             }
             else if (action == 3) {
-                if (forward) {
-                    System.out.println("Now playing \"" + listIterator.previous().getTitle() + "\"");
-                } else {
-                    System.out.println("Now playing \"" + listIterator.next().getTitle() + "\"");
-                }
-            }
-            else if (action == 4) {
                 printSongs(playlist);
             }
-            else if (action == 5) {
+            else if (action == 4) {
                 printOptions();
             }
-            else if (action == 6) {
-                if (playlist.size() > 0) {
+            else if (action == 5) {
+                if (playlist.size() == 1) {
+                    listIterator.remove();
+                    System.out.println("Your playlist is empty");
+                }
+                else if (playlist.size() > 0) {
                     System.out.println("The song has been removed");
                     listIterator.remove();
+                    if (forward && listIterator.hasNext()) {
+                        listIterator.next();
+                    } else {
+                        listIterator.previous();
+                    }
                 }
                 else {
                     System.out.println("There is no song to remove");
@@ -112,10 +112,9 @@ public class Main {
                 "0 - Quit\n" +
                 "1 - Play next song\n" +
                 "2 - Play previous song\n" +
-                "3 - Replay current song\n" +
-                "4 - Show all songs\n" +
-                "5 - Show all options\n" +
-                "6 - Delete current song\n");
+                "3 - Show all songs\n" +
+                "4 - Show all options\n" +
+                "5 - Delete current song\n");
     }
 
     private static void printSongs(LinkedList<Song> playlist) {
