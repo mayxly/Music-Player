@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Intial Commit.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Main.java" afterDir="false" />
+    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Create song class with constructors, getters and toString().">
+      <change beforePath="$PROJECT_DIR$/src/com/player/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Album.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/player/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +51,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.player.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651197029458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create song class with constructors, getters and toString().">
+      <created>1651199576996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651199576996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intial Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Intial Commit." />
+    <MESSAGE value="Create song class with constructors, getters and toString()." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create song class with constructors, getters and toString()." />
   </component>
 </project>
