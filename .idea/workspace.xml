@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Implement addToPlaylist() by track number and song title. Tested in main.">
+    <list default="true" id="1fc755c6-8329-4175-8d9b-10101e131c96" name="Changes" comment="Implement printOptions(), printSongs(), play() for user interface.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/player/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Album.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/player/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/player/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651206607769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implement printOptions(), printSongs(), play() for user interface.">
+      <created>1651208690331</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651208690331</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +118,7 @@
     <MESSAGE value="Create song class with constructors, getters and toString()." />
     <MESSAGE value="Create album class with constructor, addSong(), findSong()." />
     <MESSAGE value="Implement addToPlaylist() by track number and song title. Tested in main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement addToPlaylist() by track number and song title. Tested in main." />
+    <MESSAGE value="Implement printOptions(), printSongs(), play() for user interface." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement printOptions(), printSongs(), play() for user interface." />
   </component>
 </project>

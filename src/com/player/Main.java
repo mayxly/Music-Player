@@ -51,7 +51,60 @@ public class Main {
             printOptions();
         }
 
+        while(!quit) {
+            int action = sc.nextInt();
 
+            if (action == 0) {
+                System.out.println("Quit");
+                quit = true;
+            }
+            else if (action == 1) {
+                if (!forward && listIterator.hasNext()) {
+                    forward = true;
+                }
+                if (listIterator.hasNext()) {
+                    System.out.println("Now playing \"" + listIterator.next().getTitle() + "\"");
+                }
+                else {
+                    System.out.println("Reached the end of the playlist.");
+                    forward = false;
+                }
+            }
+            else if (action == 2) {
+                if (forward && listIterator.hasPrevious()) {
+                    forward = false;
+                }
+                if (listIterator.hasPrevious()) {
+                    System.out.println("Now playing \"" + listIterator.previous().getTitle() + "\"");
+                }
+                else {
+                    System.out.println("Reached the beginning of the playlist.");
+                    forward = false;
+                }
+            }
+            else if (action == 3) {
+                if (forward) {
+                    System.out.println("Now playing \"" + listIterator.previous().getTitle() + "\"");
+                } else {
+                    System.out.println("Now playing \"" + listIterator.next().getTitle() + "\"");
+                }
+            }
+            else if (action == 4) {
+                printSongs(playlist);
+            }
+            else if (action == 5) {
+                printOptions();
+            }
+            else if (action == 6) {
+                if (playlist.size() > 0) {
+                    System.out.println("The song has been removed");
+                    listIterator.remove();
+                }
+                else {
+                    System.out.println("There is no song to remove");
+                }
+            }
+        }
     }
     private static void printOptions() {
         System.out.println("Choose an option: ");
@@ -59,9 +112,10 @@ public class Main {
                 "0 - Quit\n" +
                 "1 - Play next song\n" +
                 "2 - Play previous song\n" +
-                "3 - Show all songs\n" +
-                "4 - Show all options\n" +
-                "5 - Delete current song\n");
+                "3 - Replay current song\n" +
+                "4 - Show all songs\n" +
+                "5 - Show all options\n" +
+                "6 - Delete current song\n");
     }
 
     private static void printSongs(LinkedList<Song> playlist) {
