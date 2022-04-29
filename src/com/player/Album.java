@@ -49,7 +49,7 @@ public class Album {
         return false;
     }
 
-    //Adding to a playlist with song title
+    //Adding to a playlist with album song title
     public Song addToPlaylist(String title, LinkedList<Song> Playlist) {
         for (int i = 0; i < this.songs.size(); i++) {
             if (this.songs.get(i).getTitle().equals(title)) {
@@ -61,6 +61,10 @@ public class Album {
         System.out.println(title + " does not exist in the album.");
         return null;
     }
+
+
+
+
 }
 
 

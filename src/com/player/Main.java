@@ -96,7 +96,8 @@ public class Main {
                     listIterator.remove();
                     if (forward && listIterator.hasNext()) {
                         listIterator.next();
-                    } else {
+                    }
+                    else {
                         listIterator.previous();
                     }
                 }
@@ -104,8 +105,19 @@ public class Main {
                     System.out.println("There is no song to remove");
                 }
             }
+            else if (action == 6) {
+                System.out.println("What is your song name?");
+                String songName = sc.next();
+                sc.nextLine();
+                System.out.println("What is the song duration?");
+                double songTime = sc.nextDouble();
+                Song newSong = new Song(songName, songTime);
+                System.out.println(songName + " has been added to the playlist");
+                listIterator.add(newSong);
+                printOptions();
+                }
+            }
         }
-    }
     private static void printOptions() {
         System.out.println("Choose an option: ");
         System.out.println(
@@ -114,7 +126,8 @@ public class Main {
                 "2 - Play previous song\n" +
                 "3 - Show all songs\n" +
                 "4 - Show all options\n" +
-                "5 - Delete current song\n");
+                "5 - Delete current song\n" +
+                "6 - Add new song\n");
     }
 
     private static void printSongs(LinkedList<Song> playlist) {
